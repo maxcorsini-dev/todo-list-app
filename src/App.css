@@ -3,8 +3,19 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
+}
+
+.Promemoria-logo {
+  width: 75px;
+  padding: 1em;
+}
+
+.Promemoria-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,7 +26,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +46,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+li {
+  list-style-type: none;
+  padding: 0.5em;
+}
+
+li::before {
+  content: "\25CB";
+  color: #000;
+  font-size: 1.2em;
+  margin-right: 0.5em;
+}
+
+button {
+  margin-left: 10px;
 }
